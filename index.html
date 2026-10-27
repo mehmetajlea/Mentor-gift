@@ -27,27 +27,27 @@
         /* Wrapper to hold side neon graphics and center card */
         .page-wrapper {
             position: relative;
-            max-width: 1100px;
+            max-width: 1250px;
             margin: 0 auto;
             display: flex;
             justify-content: center;
             align-items: flex-start;
         }
 
-        /* Left and Right Side Neon Graphic Containers */
+        /* Enhanced Large Floating Side Neon Graphics */
         .side-graphic-left, .side-graphic-right {
             position: absolute;
-            top: 150px;
-            width: 180px;
-            opacity: 0.85;
+            top: 80px;
+            width: 220px;
+            opacity: 0.9;
             pointer-events: none;
             display: none;
         }
-        @media(min-width: 1050px) {
+        @media(min-width: 1100px) {
             .side-graphic-left, .side-graphic-right { display: block; }
         }
-        .side-graphic-left { left: 10px; }
-        .side-graphic-right { right: 10px; }
+        .side-graphic-left { left: 0px; }
+        .side-graphic-right { right: 0px; }
 
         .grid {
             display: grid;
@@ -57,6 +57,7 @@
             width: 100%;
             margin: 0 auto 40px auto;
             align-items: start;
+            z-index: 2;
         }
 
         .card {
@@ -174,6 +175,8 @@
             background: #161b22;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(88,166,255,0.25);
+            position: relative;
+            z-index: 2;
         }
         .footer-section h2 {
             color: #58a6ff;
@@ -194,18 +197,19 @@
     </p>
 
     <div class="page-wrapper">
-        <!-- Left Side Neon CAD Cube / Schematic Graphic -->
+        <!-- Left Side Large Neon CAD Wireframe Cube Graphic -->
         <div class="side-graphic-left">
-            <svg viewBox="0 0 160 160" width="100%" height="100%">
-                <g fill="none" stroke="#58a6ff" stroke-width="1.5" style="filter: drop-shadow(0 0 8px #58a6ff);">
-                    <polygon points="80,20 130,50 130,110 80,140 30,110 30,50" />
-                    <polyline points="80,20 80,140" />
-                    <polyline points="30,50 130,110" />
-                    <polyline points="130,50 30,110" />
-                    <circle cx="80" cy="80" r="15" stroke="#ff79c6" />
+            <svg viewBox="0 0 200 200" width="100%" height="100%">
+                <g fill="none" stroke="#58a6ff" stroke-width="2" style="filter: drop-shadow(0 0 10px #58a6ff);">
+                    <polygon points="100,30 160,70 160,140 100,180 40,140 40,70" />
+                    <polyline points="100,30 100,180" />
+                    <polyline points="40,70 160,140" />
+                    <polyline points="160,70 40,140" />
+                    <circle cx="100" cy="105" r="22" stroke="#ff79c6" stroke-width="2" />
+                    <circle cx="100" cy="105" r="8" fill="#39ff14" />
                 </g>
             </svg>
-            <div style="color: #58a6ff; font-size: 10px; text-align: center; margin-top: 5px; text-shadow: 0 0 5px #58a6ff;">[ CAD_GRID ]</div>
+            <div style="color: #58a6ff; font-size: 11px; text-align: center; margin-top: 5px; text-shadow: 0 0 8px #58a6ff; letter-spacing: 1px;">[ CAD_AXIS_01 ]</div>
         </div>
 
         <div class="grid">
@@ -215,10 +219,10 @@
                 </div>
                 <h3>Prof.Ass. Dr. Betim Shabani</h3>
                 <div>
-                    <span class="tag">Graphic Engineering & CAD</span>[cite: 5]
-                    <span class="tag">CAD/CAM</span>[cite: 5]
-                    <span class="tag">Computer-Based Production</span>[cite: 5]
-                    <span class="tag">Production Processes</span>[cite: 5]
+                    <span class="tag">Graphic Engineering & CAD</span>
+                    <span class="tag">CAD/CAM</span>
+                    <span class="tag">Computer-Based Production</span>
+                    <span class="tag">Production Processes</span>
                 </div>
                 <div class="terminal">
                     <p style="margin-top: 0; color: #58a6ff;"><strong>> CORE_MODULES:</strong></p>
@@ -248,18 +252,19 @@
             </div>
         </div>
 
-        <!-- Right Side Neon AI Triangle Node Graphic -->
+        <!-- Right Side Large Neon AI Node Triangle Graphic -->
         <div class="side-graphic-right">
-            <svg viewBox="0 0 160 160" width="100%" height="100%">
-                <g fill="none" stroke="#ff79c6" stroke-width="1.5" style="filter: drop-shadow(0 0 8px #ff79c6);">
-                    <polygon points="80,25 140,135 20,135" />
-                    <polygon points="80,55 115,115 45,115" stroke="#58a6ff" />
-                    <line x1="80" y1="25" x2="80" y2="55" stroke="#39ff14" />
-                    <line x1="140" y1="135" x2="115" y2="115" stroke="#39ff14" />
-                    <line x1="20" y1="135" x2="45" y2="115" stroke="#39ff14" />
+            <svg viewBox="0 0 200 200" width="100%" height="100%">
+                <g fill="none" stroke="#ff79c6" stroke-width="2" style="filter: drop-shadow(0 0 10px #ff79c6);">
+                    <polygon points="100,20 180,165 20,165" />
+                    <polygon points="100,65 145,140 55,140" stroke="#58a6ff" stroke-width="1.5" />
+                    <line x1="100" y1="20" x2="100" y2="65" stroke="#39ff14" stroke-width="2" />
+                    <line x1="180" y1="165" x2="145" y2="140" stroke="#39ff14" stroke-width="2" />
+                    <line x1="20" y1="165" x2="55" y2="140" stroke="#39ff14" stroke-width="2" />
+                    <circle cx="100" cy="100" r="6" fill="#ffff33" />
                 </g>
             </svg>
-            <div style="color: #ff79c6; font-size: 10px; text-align: center; margin-top: 5px; text-shadow: 0 0 5px #ff79c6;">[ AI_NODE ]</div>
+            <div style="color: #ff79c6; font-size: 11px; text-align: center; margin-top: 5px; text-shadow: 0 0 8px #ff79c6; letter-spacing: 1px;">[ AI_NEURAL_NODE ]</div>
         </div>
     </div>
 
