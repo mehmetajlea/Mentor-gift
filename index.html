@@ -29,8 +29,25 @@
             max-width: 700px;
             margin: 0 auto 40px auto;
             align-items: start;
+            position: relative;
         }
         
+        /* Neon side border laser lines framing the card */
+        .grid::before, .grid::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            width: 2px;
+            background: linear-gradient(180deg, transparent, #58a6ff, #ff79c6, transparent);
+            filter: drop-shadow(0 0 8px #58a6ff);
+            display: none;
+        }
+        @media(min-width: 900px) {
+            .grid::before { left: -40px; display: block; }
+            .grid::after { right: -40px; display: block; }
+        }
+
         .card {
             background: #161b22;
             border: 1px solid #30363d;
@@ -84,7 +101,7 @@
         .terminal::-webkit-scrollbar-thumb:hover { background: #58a6ff; }
 
         .terminal ul {
-            list-style-type: "⚡ ";
+            list-style-type: "• ";
             padding-left: 15px;
             margin: 5px 0 15px 0;
             color: #58a6ff;
