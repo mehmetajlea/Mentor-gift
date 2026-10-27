@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THESIS MENTOR - PROF. BETIM SHABANI</title>
+    <title>THE BEST THESIS MENTOR - PROF.ASS. DR. BETIM SHABANI</title>
     <style>
         body {
             background-color: #0d1117;
@@ -13,32 +13,41 @@
             padding: 20px;
             text-align: center;
         }
-        h1 { color: #58a6ff; border-bottom: 2px dashed #30363d; padding-bottom: 10px; margin-bottom: 5px; }
+        h1 { color: #58a6ff; border-bottom: 2px dashed #30363d; padding-bottom: 10px; margin-bottom: 5px; letter-spacing: 1px; }
         h3 { 
             color: #ffff33; 
             margin: 10px 0 8px 0; 
-            font-size: 18px;
+            font-size: 20px;
             letter-spacing: 0.5px;
         }
-        .subtitle { color: #8b949e; font-size: 14px; margin-top: 0; margin-bottom: 40px; font-weight: bold; }
+        .subtitle { color: #8b949e; font-size: 14px; margin-top: 0; margin-bottom: 30px; font-weight: bold; letter-spacing: 2px; }
         
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 20px;
-            max-width: 600px;
-            margin: 0 auto 50px auto;
+            max-width: 700px;
+            margin: 0 auto 40px auto;
             align-items: start;
         }
         
         .card {
             background: #161b22;
             border: 1px solid #30363d;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.6);
             display: flex;
             flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #58a6ff, #ff79c6, #39ff14);
         }
         
         .avatar-wrapper {
@@ -53,20 +62,20 @@
             height: auto;
             border-radius: 8px;
             border: 1px solid #58a6ff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
         }
         
         .terminal {
             background: #000;
             color: #39ff14; 
             text-align: left;
-            padding: 15px;
-            border-radius: 5px;
+            padding: 18px;
+            border-radius: 6px;
             font-size: 13px;
             margin-top: 15px;
-            border: 1px solid #333;
-            line-height: 1.5;
-            height: 380px; 
+            border: 1px solid #30363d;
+            line-height: 1.6;
+            max-height: 420px; 
             overflow-y: auto; 
         }
         .terminal::-webkit-scrollbar { width: 6px; height: 6px; }
@@ -75,20 +84,20 @@
         .terminal::-webkit-scrollbar-thumb:hover { background: #58a6ff; }
 
         .terminal ul {
-            list-style-type: "• ";
+            list-style-type: "⚡ ";
             padding-left: 15px;
             margin: 5px 0 15px 0;
             color: #58a6ff;
         }
         .terminal ul li {
-            margin-bottom: 4px;
+            margin-bottom: 6px;
         }
         
         .code-block {
             background: #1e1e1e;
             border-left: 3px solid #ff79c6;
-            padding: 12px;
-            margin: 10px 0;
+            padding: 14px;
+            margin: 12px 0;
             font-family: Consolas, Monaco, monospace;
             color: #f8f8f2;
             white-space: pre; 
@@ -98,7 +107,7 @@
             border-radius: 4px;
         }
         .code-block::-webkit-scrollbar { height: 4px; }
-        .code-block::-webkit-scrollbar-thumb { background: #30363d; border-radius: 2px; }
+        .code-block::-webkit-scrollbar-thumb { argument-background: #30363d; border-radius: 2px; }
 
         .py-k { color: #ff79c6; font-weight: bold; }
         .py-f { color: #8beb53; }
@@ -113,8 +122,9 @@
             color: #f0f6fc;
             padding: 5px 10px;
             border-radius: 20px;
-            font-size: 12px;
-            margin: 5px 2px;
+            font-size: 11px;
+            margin: 4px 2px;
+            border: 1px solid #30363d;
         }
         .highlight-yellow {
             color: #ffff33;
@@ -125,67 +135,74 @@
             font-weight: bold;
         }
         .footer-section {
-            max-width: 600px;
-            margin: 50px auto 20px auto;
+            max-width: 700px;
+            margin: 40px auto 20px auto;
             padding: 25px;
             border: 1px dashed #58a6ff;
             background: #161b22;
             border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
         }
         .footer-section h2 {
             color: #58a6ff;
             margin: 0;
-            font-size: 16px;
+            font-size: 15px;
             letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
 
-    <h1>THESIS MENTORSHIP ARCHIVE</h1>
-    <p class="subtitle">PROJECT SUPERVISOR</p>
+    <h1>THE BEST THESIS MENTOR</h1>
+    <p class="subtitle">>> SYSTEM_OVERRIDE: EXCELLENCE_DETECTED <<</p>
     
-    <p style="color: #8b949e; font-size: 14px; max-width: 600px; margin: -30px auto 40px auto; line-height: 1.6;">
-        Thank you for guiding me through the most critical milestone of my studies[cite: 5]. Your mentorship turned complex challenges into clear engineering solutions.
+    <p style="color: #8b949e; font-size: 14px; max-width: 650px; margin: -10px auto 30px auto; line-height: 1.6;">
+        Professors guide you through coursework, but a true thesis mentor helps you engineer your future. Thank you for turning complex ideas into flawless execution.
     </p>
 
     <div class="grid">
         
         <div class="card">
             <div class="avatar-wrapper">
-                <img src="betim.png" class="avatar" alt="Prof. Dr. Betim Shabani">
+                <img src="betimi.png" class="avatar" alt="Prof.Ass. Dr. Betim Shabani">
             </div>
-            <h3>Prof. Dr. Betim Shabani</h3>
+            <h3>Prof.Ass. Dr. Betim Shabani</h3>
             <div>
-                <span class="tag">Graphic Engineering & CAD</span>[cite: 5]
-                <span class="tag">CAD/CAM</span>[cite: 5]
-                <span class="tag">Computer-Based Production</span>[cite: 5]
-                <span class="tag">Production Processes</span>[cite: 5]
+                <span class="tag">Graphic Engineering & CAD</span>
+                <span class="tag">CAD/CAM</span>
+                <span class="tag">Computer-Based Production</span>
+                <span class="tag">Production Processes</span>
             </div>
             <div class="terminal">
-                <p style="margin-top: 0; color: #58a6ff;"><strong>> MENTORSHIP_MODULES:</strong></p>
+                <p style="margin-top: 0; color: #58a6ff;"><strong>> CORE_MODULES:</strong></p>
                 <ul>
-                    <li>Graphic Engineering & CAD (Mastering precision design and blueprints)[cite: 5]</li>
-                    <li>CAD/CAM (Bridging virtual models to automated manufacturing)[cite: 5]</li>
-                    <li>Computer-Based Production & Processes (Optimizing workflow and system execution)[cite: 5]</li>
-                    <li>Thesis Supervision (Turning engineering theory into a reality)</li>
+                    <li>Graphic Engineering & CAD (Mastering structural design accuracy)</li>
+                    <li>CAD/CAM (Translating virtual architecture into physical reality)</li>
+                    <li>Computer-Based Production & Processes (Optimizing manufacturing lifecycles)</li>
+                    <li>Thesis Project: <i>Application of Artificial Intelligence to the Design of a Drone Landing Gear</i></li>
                 </ul>
+                
                 <p style="color: #58a6ff;"><strong>> EXECUTE_SCRIPT:</strong></p>
-<div class="code-block"><span class="py-k">while</span> <span class="py-v">thesis</span>.<span class="py-f">is_under_review</span>():
-    <span class="py-v">guidance</span> <span class="py-o">+=</span> <span class="py-n">1</span>
-    <span class="py-f">print</span>(<span class="py-s">"Draft approved. Keep going!"</span>)
-    
-    <span class="py-v">expert_advice</span> <span class="py-o">=</span> <span class="py-s">"Infinite"</span>
-    <span class="py-v">success_status</span> <span class="py-o">=</span> <span class="py-v">True</span></div>
+<div class="code-block"><span class="py-k">class</span> <span class="py-v">MasterMentor</span>:
+    <span class="py-k">def</span> <span class="py-f">__init__</span>(<span class="py-v">self</span>):
+        <span class="py-v">self</span>.<span class="py-v">patience</span> <span class="py-o">=</span> <span class="py-s">"Infinite"</span>
+        <span class="py-v">self</span>.<span class="py-v">tolerance_check</span> <span class="py-o">=</span> <span class="py-u">True</span>
+
+    <span class="py-k">def</span> <span class="py-f">optimize_design</span>(<span class="py-v">self</span>, <span class="py-v">ai_model</span>, <span class="py-v">drone_gear</span>):
+        <span class="py-k">while</span> <span class="py-v">not</span> <span class="py-v">drone_gear</span>.<span class="py-f">is_perfect</span>():
+            <span class="py-v">ai_model</span>.<span class="py-f">recompute</span>()
+            <span class="py-f">print</span>(<span class="py-s">"Checking parameters... Perfect dimensions found!"</span>)
+        <span class="py-k">return</span> <span class="py-s">"Thesis Defended Successfully!"</span></div>
+
                 <p style="color: #58a6ff;"><strong>> RETRIEVED_MEMORIES:</strong></p>
-                <p>Thank you so much for being an exceptional mentor throughout my thesis journey[cite: 5]. Your deep expertise in CAD/CAM, production systems, and design[cite: 5] gave me the exact structural guidance I needed whenever I hit a roadblock. Thank you for your patience, your precise feedback, and for helping me successfully shape and finalize my research. <span class="highlight-yellow">Your support made all the difference in reaching this finish line!</span></p>
+                <p>Working on my thesis—<i>Application of Artificial Intelligence to the Design of a Drone Landing Gear</i>—was a massive undertaking, but having you as my mentor made all the difference. Whenever my CAD models or AI algorithms felt chaotic, your deep insight, sharp feedback, and calm guidance brought everything into alignment. Thank you for challenging me to think deeper, pushing me to achieve technical precision, and always making time to help me refine my work. <span class="highlight-yellow">You are genuinely the best mentor I could have asked for, and your impact on my engineering path will stay with me always!</span></p>
             </div>
         </div>
 
     </div>
 
     <div class="footer-section">
-        <h2>THESIS PROJECT SUCCESS | 2026 <span class="highlight-pink">(LEA)</span></h2>
+        <h2>THESIS PROJECT COMPLETE | ACADEMIC EXCELLENCE <span class="highlight-pink">(LEA)</span></h2>
     </div>
 
 </body>
