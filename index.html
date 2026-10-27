@@ -25,35 +25,37 @@
         
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: 1fr;
             gap: 20px;
-            max-width: 720px;
+            max-width: 760px;
             margin: 0 auto 40px auto;
             align-items: start;
             position: relative;
         }
         
-        /* Permanent Neon Cyber-Lines on the sides */
+        /* Neon side cyber-markers */
         .grid::before, .grid::after {
             content: '//';
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            font-size: 24px;
+            font-size: 28px;
             color: #ff79c6;
-            text-shadow: 0 0 10px #ff79c6, 0 0 20px #58a6ff;
+            text-shadow: 0 0 12px #ff79c6, 0 0 25px #58a6ff;
             letter-spacing: -2px;
-            opacity: 0.8;
+            display: none;
         }
-        .grid::before { left: -35px; }
-        .grid::after { right: -35px; }
+        @media(min-width: 820px) {
+            .grid::before { left: -45px; display: block; }
+            .grid::after { right: -45px; display: block; }
+        }
 
         .card {
             background: #161b22;
             border: 2px solid #58a6ff;
             border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 0 25px rgba(88, 166, 255, 0.25), inset 0 0 15px rgba(88, 166, 255, 0.05);
+            padding: 30px;
+            box-shadow: 0 0 30px rgba(88, 166, 255, 0.3), inset 0 0 20px rgba(88, 166, 255, 0.05);
             display: flex;
             flex-direction: column;
             position: relative;
@@ -67,7 +69,7 @@
             top: 0; left: 0; right: 0;
             height: 4px;
             background: linear-gradient(90deg, #58a6ff, #ff79c6, #39ff14);
-            box-shadow: 0 0 10px #39ff14;
+            box-shadow: 0 0 12px #39ff14;
         }
         
         .avatar-wrapper {
@@ -89,15 +91,13 @@
             background: #000;
             color: #39ff14; 
             text-align: left;
-            padding: 18px;
+            padding: 20px;
             border-radius: 6px;
             font-size: 13px;
             margin-top: 15px;
             border: 1px solid #30363d;
             line-height: 1.6;
-            max-height: 420px; 
-            overflow-y: auto; 
-            box-shadow: inset 0 0 10px rgba(57,255,20,0.15);
+            box-shadow: inset 0 0 15px rgba(57,255,20,0.15);
         }
         .terminal::-webkit-scrollbar { width: 6px; height: 6px; }
         .terminal::-webkit-scrollbar-track { background: #000; }
@@ -158,7 +158,7 @@
             font-weight: bold;
         }
         .footer-section {
-            max-width: 720px;
+            max-width: 760px;
             margin: 40px auto 20px auto;
             padding: 25px;
             border: 2px dashed #58a6ff;
@@ -180,7 +180,7 @@
     <h1>THE BEST THESIS MENTOR</h1>
     <p class="subtitle">>> SYSTEM_OVERRIDE: INSPIRATION_UNLOCKED <<</p>
     
-    <p style="color: #8b949e; font-size: 14px; max-width: 650px; margin: -10px auto 30px auto; line-height: 1.6;">
+    <p style="color: #8b949e; font-size: 14px; max-width: 700px; margin: -10px auto 30px auto; line-height: 1.6;">
         Professors guide you through coursework, but a true thesis mentor helps you engineer your future. Thank you for turning complex ideas into flawless execution.
     </p>
 
@@ -201,7 +201,9 @@
                 <p style="margin-top: 0; color: #58a6ff;"><strong>> CORE_MODULES:</strong></p>
                 <ul>
                     <li>Graphic Engineering & CAD (First semester inspiration & precision design)</li>
-                    <li>CAD/CAM & Production (Turning theory into automated reality)</li>
+                    <li>CAD/CAM (Turning theory into automated reality)</li>
+                    <li>Computer-Based Production (Optimizing digital manufacturing workflows)</li>
+                    <li>Production Processes (Mastering structural manufacturing execution)</li>
                     <li>Class Atmosphere (Balancing serious engineering with perfect timing jokes)</li>
                     <li>Thesis Project: <i>Application of Artificial Intelligence to the Design of a Drone Landing Gear</i></li>
                 </ul>
@@ -218,7 +220,7 @@
     <span class="py-v">knowledge_retained</span> = <span class="py-n">100</span></div>
 
                 <p style="color: #58a6ff;"><strong>> RETRIEVED_MEMORIES:</strong></p>
-                <p>From my very first semester, you were my primary inspiration to become a better engineer. They say engineering is about solving complex problems, but having a professor who inspires you right from the beginning makes all the equations fall into place. You have this rare gift of knowing exactly when to be serious and when to drop the perfect joke to keep the atmosphere right, and your classes were so phenomenal that I still remember everything you taught from graphic engineering and CAD all the way to mentoring my final thesis. Beyond my thesis, thank you for being the mentor who always kept his door open, pushed me toward precision, and motivated me every step of the way. <span class="highlight-yellow">Your guidance didn't just help me build a drone landing gear; you inspired a career and shaped the engineer I am becoming.</span></p>
+                <p>From my very first semester, you were my primary inspiration to become a better engineer. They say engineering is about solving complex problems, but having a professor who inspires you right from the beginning makes all the equations fall into place. You have this rare gift of knowing exactly when to be serious and when to drop the perfect joke to keep the atmosphere right, and your classes were so phenomenal that I still remember everything you taught—from graphic engineering and CAD all the way to mentoring my final thesis. Beyond my thesis, thank you for being the mentor who always kept his door open, pushed me toward precision, and motivated me every step of the way. <span class="highlight-yellow">Your guidance didn't just help me build a drone landing gear; you inspired a career and shaped the engineer I am becoming.</span></p>
             </div>
         </div>
 
